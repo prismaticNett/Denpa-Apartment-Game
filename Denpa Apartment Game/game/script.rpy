@@ -3,7 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define s = Character("Slow")
+define l = Character("Loris")
+define sl = Character("Slow & Loris")
+define vb = Character("Vampire Bat")
+define cr = Character("Crested Rat")
 
 
 # The game starts here.
