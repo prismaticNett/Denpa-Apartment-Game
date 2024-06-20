@@ -32,6 +32,11 @@ label start:
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
+    s "Hi, I'm Slow--"
+
+    l "And I'm Loris."
+
+    sl "We're the cigarette brothers."
     # This ends the game.
 
     return
