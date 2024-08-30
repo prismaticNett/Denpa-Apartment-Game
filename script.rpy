@@ -8,6 +8,7 @@ define l = Character("Loris")
 define sl = Character("Slow & Loris")
 define vb = Character("Vampire Bat")
 define cr = Character("Crested Rat")
+define sh = Character("Shrew")
 
 
 # The game starts here.
