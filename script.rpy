@@ -9,6 +9,7 @@ define sl = Character("Slow & Loris")
 define vb = Character("Vampire Bat")
 define cr = Character("Crested Rat")
 define sh = Character("Shrew")
+define ll = Character("Landlord")
 
 
 # The game starts here.
@@ -19,7 +20,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg bombe
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -28,13 +29,7 @@ label start:
     show eileen happy
 
     # These display lines of dialogue.
-    vb "Welcome to apartments. Isn't life beautiful?"
-   
-    s "Hi, I'm Slow--"
-
-    l "And I'm Loris."
-
-    sl "We're the cigarette brothers."
+    
     # This ends the game.
 
     return
