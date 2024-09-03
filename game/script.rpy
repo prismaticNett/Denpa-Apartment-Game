@@ -6,7 +6,7 @@
 define s = Character("Slow")
 define l = Character("Loris")
 define sl = Character("Slow & Loris")
-define vb = Character("Vampire Bat", what_font="KGWakeMeUp.tff")
+define vb = Character("Vampire Bat")
 define cr = Character("Crested Rat")
 define sh = Character("Shrew")
 define ll = Character("Landlord")

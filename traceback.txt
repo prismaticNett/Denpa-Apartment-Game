@@ -3,7 +3,7 @@
 While running game code:
   File "game/script.rpy", line 32, in script
     vb "Why are you here?"
-Exception: Could not find font 'KGWakeMeUp.tff'.
+Exception: Could not find font 'KGWakeMeUp.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -68,9 +68,9 @@ Full traceback:
     face = load_face(fn)
   File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\text\font.py", line 658, in load_face
     raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'KGWakeMeUp.tff'.
+Exception: Could not find font 'KGWakeMeUp.ttf'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.0.3.22090809
 Marmara Apartments 1.0
-Tue Sep  3 16:14:04 2024
+Tue Sep  3 16:19:17 2024
