@@ -28,7 +28,7 @@ label start:
 
     show vampirebat_placeholder
 
-    
+
     vb "Why are you here?"
     vb "What do you want from me?" with vpunch
 
@@ -37,3 +37,5 @@ label start:
     # This ends the game.
 
     return
+
+start
