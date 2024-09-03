@@ -26,11 +26,15 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show vampirebat_placeholder
+    show vampirebat placeholder
 
 
     vb "Why are you here?"
     vb "What do you want from me?" with vpunch
+
+    ll "..."
+
+    
 
     # These display lines of dialogue.
     
