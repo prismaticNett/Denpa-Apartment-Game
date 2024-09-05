@@ -6,7 +6,7 @@
 define s = Character("Slow")
 define l = Character("Loris")
 define sl = Character("Slow & Loris")
-define vb = Character("Vampire Bat")
+define vb = Character("Vampire Bat", image="vampirebat", color="dda264")
 define cr = Character("Crested Rat")
 define sh = Character("Shrew")
 define ll = Character("Landlord")
@@ -22,17 +22,22 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg bombe
-
+    scene black
+    show bg vampirebat:
+        xcenter 0.5
+        ycenter 0.5
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show vampirebat placeholder
+    show vampirebat pensive:
+        xcenter 0.25
+        yalign 0.80
+    
 
-
-    vb "Why are you here?"
-    vb "What do you want from me?" with vpunch
+    vb pensive "You don't understand. "
+    extend "I'm safe in here. " 
+    extend "Please don't make me leave, there's no one waiting for me outside." with vpunch
 
     ll "..."
 

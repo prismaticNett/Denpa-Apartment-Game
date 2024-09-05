@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 39, in script
-    vb "your %(meter) meter!"
-ValueError: unsupported format character 'm' (0x6d) at index 14
+  File "game/script.rpy", line 26, in script
+    show bg vampirebat center
+Exception: Image 'bg vampirebat' does not accept attributes 'center'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 39, in script
-    vb "your %(meter) meter!"
-  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\exports.py", line 1362, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character 'm' (0x6d) at index 14
+  File "game/script.rpy", line 26, in script
+    show bg vampirebat center
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\display\image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\display\core.py", line 397, in _duplicate
+    args.extraneous()
+  File "C:\PC Games\RenPy\renpy-8.0.3-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bg vampirebat' does not accept attributes 'center'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.0.3.22090809
 Marmara Apartments 1.0
-Tue Sep  3 16:59:00 2024
+Wed Sep  4 21:13:09 2024
